@@ -15,8 +15,8 @@ public:
                 ans = min(ans, nums[s]);
                 s = mid + 1;
             }else{
-                e = mid-1;
                 ans = min(ans, nums[mid]);
+                e = mid-1;
             }
         }
         return ans;
