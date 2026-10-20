@@ -1,34 +1,34 @@
 class Solution {
 public:
-    int findPivot(vector<int>& nums, int s, int e) {
-    while (s < e) {
-        int mid = s + (e - s) / 2;
+//     int findPivot(vector<int>& nums, int s, int e) {
+//     while (s < e) {
+//         int mid = s + (e - s) / 2;
 
-        if (nums[mid] > nums[e]) {
-            s = mid + 1;
-        }
-        else if (nums[mid] < nums[e]) {
-            e = mid;
-        }
-        else {
-            e--;
-        }
-    }
+//         if (nums[mid] > nums[e]) {
+//             s = mid + 1;
+//         }
+//         else if (nums[mid] < nums[e]) {
+//             e = mid;
+//         }
+//         else {
+//             e--;
+//         }
+//     }
 
-    return s;
-}
-    bool binarySearch(vector<int>& nums, int s, int e, int target){
-        while(s<=e){
-            int mid = s + (e-s)/2;
-            if(nums[mid] == target)
-                return true;
-            if(nums[mid]<target)
-                s = mid+1;
-            else
-                e = mid-1;
-        }
-        return false;
-    }
+//     return s;
+// }
+//     bool binarySearch(vector<int>& nums, int s, int e, int target){
+//         while(s<=e){
+//             int mid = s + (e-s)/2;
+//             if(nums[mid] == target)
+//                 return true;
+//             if(nums[mid]<target)
+//                 s = mid+1;
+//             else
+//                 e = mid-1;
+//         }
+//         return false;
+//     }
 
     bool search(vector<int>& nums, int target) {
         int s = 0;
