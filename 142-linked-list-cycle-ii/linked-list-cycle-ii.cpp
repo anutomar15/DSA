@@ -24,11 +24,11 @@ public:
                 break;
             }
         }
-         if(slow != fast){
+         if(fast == NULL|| fast->next == NULL){
             return NULL;
         }
         ListNode* intersect = head;
-        while(intersect != slow && slow != NULL){
+        while(intersect != slow){
             intersect = intersect->next;
             slow = slow->next;
         } 
