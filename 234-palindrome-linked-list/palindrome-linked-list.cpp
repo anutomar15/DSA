@@ -49,7 +49,7 @@ public:
             head2 = head2->next;
         }
         temp = mid->next;
-        temp = reverse(head);
+        mid->next = reverse(temp);
         return true;
     }
 };
